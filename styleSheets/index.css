@@ -1,0 +1,152 @@
+/* 
+    Sherry Kong
+    06/30/2020  
+*/
+
+h2, h3, p {user-select: none;}
+
+h2 {
+    font-size: 2em;
+    color: #FFB90F;
+    text-align: center;
+    text-shadow: 0 1px 2px black;
+    text-transform: uppercase;
+}
+
+/* section 1 */
+div.jumbotron {
+    position: relative;
+    max-height: 400px;
+    background-color: black;
+    overflow: hidden
+}
+div.jumbotron img {
+    width: 100%; 
+    opacity: 0.6;
+}
+
+div.jumbotron h2 {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    z-index: 1;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+}
+
+section#introduction p {
+    font-size: 1.1em;
+    line-height: 2em;
+    padding: 60px 0;
+    margin: 0 10%;
+    transition: 0.5s;
+}
+
+section#introduction span {
+    color: #996f0e;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+/* section 2 -event */
+
+section.event {
+    background: url(../images/animal10.jpg) center;
+    background-size: cover;
+    height: 300px;
+}
+
+section.event h2 {padding: 20px 0;}
+
+div.info {
+    background-color: #eee;
+    width:40%;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #FFB90F;
+    transition: 0.5s;
+}
+
+div.info h3 {text-transform: uppercase;}
+
+div.info p:nth-child(2){
+    color: gray;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+section.event button {
+    font-size: 1em;
+    padding: 10px;
+    margin: 5px 0 0 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFB90F;
+}
+section.event button:hover {
+    color: #fff;
+    background-color: #996f0e;
+    cursor: pointer;
+}
+
+/* section 3 */
+section#more {padding: 0 5%;}
+
+section#more h2 {margin: 50px 0;}
+
+div.icon {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    margin: 0 0 5% 0;
+}
+
+section#more img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+section#more img:hover {border: 10px solid #FFB90F;}
+
+section#more h3 {
+    color: #bd870b;
+    padding: 10px 0;
+}
+
+/* breakpoint1 */
+@media screen and (max-width:800px) {
+    div.icon {
+        width: 50%;
+    }
+    div.jumbotron h2 {
+        right: 0;
+    }
+}
+
+/* breakpoint2 */
+
+@media screen and (max-width:550px) {
+    div.icon {width: 100%;}
+    
+    div.jumbotron h2 {
+        top: 45%;
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+    div.jumbotron img {
+        width: 150%;
+        transition: 0.3s;
+    }
+
+    section#introduction p {
+        font-size: 1em;
+        line-height: 1.6em;
+        transition: 0.5s;
+    }
+
+    div.info {
+        width:80%;
+        transition: 0.5s;
+    }
+}

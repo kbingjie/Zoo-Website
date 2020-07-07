@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- 
+    Sherry Kong
+    07/01/2020 
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/subscribe.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>McFarland Zoo - Subscribe</title>
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <h1>McFarland Zoo</h1>
+
+        <nav>
+
+            <ul class="clearfix">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="img">
+            <h2>Subscribe Us</h2>
+            <p>Sign up for exciting <span>McFarland Zoo</span> news!</p>
+        </section>
+
+        <div class="container">
+
+            <form action="http://itins3.madisoncollege.edu/echo.php" method="POST">
+                <label for="username">name</label>
+                <input type="text" id="username" name="username" placeholder="please enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="please enter your email">
+
+                <label for="zipcode">Zipcode</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="please enter your zipcode" pattern="\d{5}"
+                    title="Zipcode has to be 5 digits">
+
+                <label for="age">What age group are you in?</label>
+
+                <select name="age" id="age">
+                    <option value="under 20">under 20</option>
+                    <option value="under 50">under 50</option>
+                    <option value="under 80">under 80</option>
+                    <option value="over 80">over 80</option>
+                </select>
+
+                <fieldset>
+                    <legend>Which continent animal you want to subscribe?</legend>
+                    <input type="checkbox" id="africa" name="africa" value="africa">
+                    <label for="africa">Africa</label>
+
+                    <input type="checkbox" id="asia" name="asia" value="asia">
+                    <label for="asia">Asia</label>
+
+                    <input type="checkbox" id="europe" name="europe" value="europe">
+                    <label for="europe">Europe</label>
+
+                    <input type="checkbox" id="northAmerica" name="northAmerica" value="northAmerica">
+                    <label for="northAmerica">North America</label>
+
+                    <input type="checkbox" id="southAmerica" name="southAmerica" value="southAmerica">
+                    <label for="southAmerica">South America</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Would you like to receive discount offer emails?</legend>
+                    <input type="radio" id="yes" name="promotion" value="yes" checked>
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" id="no" name="promotion" value="no">
+                    <label for="no">No</label>
+                </fieldset>
+
+                <div class="buttons">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="clearfix">
+
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <div class="des">
+            <p>Open daily 9:30am - 5:00pm/Hours may vary on holidays</p>
+            <p>&copy;2020 McFarland Zoo. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+/* 
+    Sherry Kong
+    07/01/2020  
+*/
+
+/* ===general start=== */
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.container {
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+a, a:visited{color: #8B6914;}
+/* ===general end=== */
+
+/* ===header start=== */
+header {
+    padding: 20px;
+    background-color: #fff;
+}
+
+header h1 {
+    float: left;
+    color: #FFB90F;
+    text-shadow: 1px 2px 1px black;
+    user-select: none;
+}
+
+header nav {float: right;}
+
+header nav li {
+    float: left;
+    font-size: 1.1em;
+    line-height: 2.5em;
+    margin: 0 20px;
+    height: 40px;
+}
+header nav li:hover {
+    border-bottom: 5px solid #FFB90F;
+    transition: 0.3s;
+}
+/* ===header end=== */
+
+/* ===footer start=== */
+footer {
+    background-color: #eee;
+    padding: 30px 100px;
+}
+
+div.social {float: left;}
+
+i.fa {
+    color: gray;
+    font-size: 2em;
+    padding: 0 20px;
+}
+i.fa:hover {color: #8B6914;}
+
+div.des {
+    float: right;
+    user-select: none;
+}
+
+div.des p:nth-child(1) {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #8B6914;
+}
+
+div.des p:nth-child(2) {
+    font-size: 0.8em;
+    color: gray;
+    padding-top: 20px;
+}
+/* ===footer end=== */
+
+/* breakpoint1 */
+@media screen and (max-width:900px) {
+    div.des {
+        float: none;
+        margin-top: 20px;
+        text-align: center;
+    }
+    div.social {
+        float: none;
+        text-align: center;
+    }
+    header h1 {
+        float: none;
+        text-align: center
+    }
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    header nav ul{display: inline-block;}
+    
+    header nav li {
+        float: none;
+        display: inline-block;
+    }
+}
+
+/* breakpoint2 */
+@media screen and (max-width:505px) {
+    header nav li {display: block;}
+
+    div.social, div.des {font-size: 0.6em;}
+}
