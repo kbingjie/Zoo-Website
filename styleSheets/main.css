@@ -25,6 +25,8 @@
     margin: 0 auto;
 }
 
+.show-nav {display: block;}
+
 a, a:visited{color: #8B6914;}
 /* ===general end=== */
 
@@ -41,7 +43,17 @@ header h1 {
     user-select: none;
 }
 
-header nav {float: right;}
+header nav {
+    position: relative;
+    float: right;
+}
+
+header div {display: none;}
+
+header i.fa-bars {
+    padding: 0;
+    color: #9c813c;
+}
 
 header nav li {
     float: left;
@@ -119,7 +131,25 @@ div.des p:nth-child(2) {
 
 /* breakpoint2 */
 @media screen and (max-width:505px) {
-    header nav li {display: block;}
+    header h1 {float: left;}
+
+    header div {
+        display: block;
+        text-align: right;
+        cursor: pointer;
+        float: right;
+    }
+
+    header nav {
+        clear: both;
+        text-align: left;
+        display: none;
+    }
+
+    header nav li {
+        display: block;
+        margin-left: 0;
+    }
 
     div.social, div.des {font-size: 0.6em;}
 }

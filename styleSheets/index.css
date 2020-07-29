@@ -128,6 +128,7 @@ section#more h3 {
 
 @media screen and (max-width:550px) {
     div.icon {width: 100%;}
+    div.jumbotron {height: 200px;}
     
     div.jumbotron h2 {
         top: 45%;
@@ -135,12 +136,12 @@ section#more h3 {
         transition: 0.5s;
     }
     div.jumbotron img {
-        width: 150%;
+        width: 160%;
         transition: 0.3s;
     }
 
     section#introduction p {
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 1.6em;
         transition: 0.5s;
     }
