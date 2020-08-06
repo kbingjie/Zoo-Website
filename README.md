@@ -1,6 +1,13 @@
-# schoolProject-Zoo-Website
-This is a small school class project.
+# Zoo-Website
+> A responsive design web built with JavaScript, html5, css3
 
-Responsive zoo website, used html5, css3
+[Go to This Project](https://kbingjie.com/Zoo-Website/)
 
-http://kbingjie.com/schoolProject-Zoo-Website/
+- Home Page
+   - 2 Breakpoints
+- Animals Page
+   - Table
+- Subscribe Page
+   - Form control
+- Contact Us Page
+
